@@ -1,0 +1,16 @@
+@import "./../../../scss/index.scss";
+
+.button {
+  padding: 4px 10px;
+
+  font-size: 16px;
+  color: $color-gray;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &_active {
+    border: 1px solid $color-darkred;
+  }
+}

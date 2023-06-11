@@ -1,0 +1,20 @@
+@import "./../../../scss/index.scss";
+
+.header {
+  @extend %template-todo-block;
+
+  &__input {
+    margin-left: 48px;
+
+    font-size: 24px;
+    line-height: 26px;
+
+    &::placeholder {
+      color: $color-gray;
+      font-size: 24px;
+      line-height: 26px;
+
+      font-style: oblique;
+    }
+  }
+}

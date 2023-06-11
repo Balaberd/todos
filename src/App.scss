@@ -1,0 +1,19 @@
+@import "./scss/index.scss";
+
+.App {
+  &__container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-top: 32px;
+
+    text-align: center;
+    color: $color-darkred;
+    font-weight: 300;
+    font-size: 80px;
+
+    opacity: 0.45;
+  }
+}

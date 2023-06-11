@@ -1,0 +1,17 @@
+@import "./../../../scss/index.scss";
+
+.todoItem {
+  @extend %template-todo-block;
+}
+
+.title {
+  width: 100%;
+  text-align: left;
+
+  transition: 0.2s;
+
+  &_isDone {
+    color: $color-gray;
+    text-decoration: line-through;
+  }
+}
