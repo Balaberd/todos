@@ -19,6 +19,7 @@ export const Header: React.FC = (): React.ReactElement => {
   return (
     <div className={styles.header}>
       <input
+        data-testid="input-elem"
         value={value}
         onChange={({ target: { value } }) => {
           setValue(value);

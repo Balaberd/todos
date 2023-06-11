@@ -31,6 +31,7 @@ export const Footer: React.FC = () => {
 
       <div className={styles.controlBlock}>
         <Button
+          data-testid="remove-button"
           onClick={createHandlerOnChangeFilter("all")}
           isActive={activeFilter === "all"}
         >
@@ -50,12 +51,7 @@ export const Footer: React.FC = () => {
         </Button>
       </div>
 
-      <Button
-        onClick={onRemoveComplited}
-        isActive={activeFilter === "complited"}
-      >
-        Clear complited
-      </Button>
+      <Button onClick={onRemoveComplited}>Clear complited</Button>
     </div>
   );
 };

@@ -11,7 +11,7 @@ interface Props {
 
 export const TodoItem: React.FC<Props> = ({ title, isDone, onToggleTodo }) => {
   return (
-    <div className={styles.todoItem}>
+    <div className={styles.todoItem} data-testid="todo-item">
       <Checkbox checked={isDone} onChange={onToggleTodo} />
       <span className={cn(styles.title, { [styles.title_isDone]: isDone })}>
         {title}

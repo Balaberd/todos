@@ -8,13 +8,14 @@ const rootReducer = combineReducers({
   filter: filterSlice,
 });
 
-const setupStore = () => {
+export const setupStore = (initialState = {}) => {
   return configureStore({
     reducer: rootReducer,
+    preloadedState: initialState,
   });
 };
 
-export const store = setupStore();
+export const store: AppStore = setupStore();
 
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppStore = ReturnType<typeof setupStore>;
