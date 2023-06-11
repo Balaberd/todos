@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Balaberd/todos/static/css/main.23c3c3ad.css",
+    "main.js": "/Balaberd/todos/static/js/main.664fe5fc.js",
+    "static/js/787.7ab45602.chunk.js": "/Balaberd/todos/static/js/787.7ab45602.chunk.js",
+    "index.html": "/Balaberd/todos/index.html",
+    "main.23c3c3ad.css.map": "/Balaberd/todos/static/css/main.23c3c3ad.css.map",
+    "main.664fe5fc.js.map": "/Balaberd/todos/static/js/main.664fe5fc.js.map",
+    "787.7ab45602.chunk.js.map": "/Balaberd/todos/static/js/787.7ab45602.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23c3c3ad.css",
+    "static/js/main.664fe5fc.js"
+  ]
+}
