@@ -1,0 +1,39 @@
+@import "./../../../scss/index.scss";
+
+.customCheckbox {
+  &_checked {
+    .wrapper {
+      border-color: $color-green-dark;
+
+      &::before {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.wrapper {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid $color-gray;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+
+  &::before {
+    content: "\2714";
+    color: $color-green-dark;
+    font-size: 22px;
+
+    visibility: hidden;
+  }
+}
+
+.checkbox {
+  display: none;
+}

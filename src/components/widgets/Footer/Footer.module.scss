@@ -1,0 +1,43 @@
+@import "./../../../scss/index.scss";
+
+.footer {
+  @extend %template-todo-block;
+
+  font-size: 16px;
+  color: $color-gray;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    height: 10px;
+    width: 590px;
+    @extend %template-todo-block;
+    padding: 0;
+
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+
+    height: 10px;
+    width: 580px;
+    @extend %template-todo-block;
+    padding: 0;
+
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    z-index: -2;
+  }
+}
+
+.controlBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
